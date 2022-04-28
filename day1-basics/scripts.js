@@ -40,7 +40,12 @@ scene.add(cubeMesh)
 // Near clipping plane is the closest point to the camera
 // Far clipping plane is the furthest point to the camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
+
+// Position for the camera to view the object
+camera.position.x = 1
+camera.position.y = 1
 camera.position.z = 3
+
 scene.add(camera)
 
 // Renderer
